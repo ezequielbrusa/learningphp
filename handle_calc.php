@@ -37,7 +37,7 @@ $monthly = $total / $payments;
 
 //Apply the propper formatting:
      $total = number_format($total, 2);
-     $monthly = number_format($minthly, 2);
+     $monthly = number_format($monthly, 2);
 
 // Print out the results
 print "<p>You have selected to purchase:<br>
