@@ -1,4 +1,9 @@
-<!DOCTYPE html> <!--I had to save this file as a php in order to make the php work. PErhaps in teh book Ullman uses a different version of php -->
+
+
+<?php //   Script  (8.2)  + 8.11 
+// Turn on output buffering:
+ob_start();?>
+<!DOCTYPE html> <!--I had to save this file as a php in order to make the php work. PErhaps in the book Ullman uses a different version of php -->
 <html lang="en">
 <head>
 
@@ -10,13 +15,13 @@
 <title><?php // Print the page title.
     if (defined('TITLE')) {
         print TITLE;
-    } else { print 'Raise High the Roof Beam! A J>D> Salinger Fan Club';}
+    } else { print 'Raise High the Roof Beam! A J.D. Salinger Fan Club';}
     ?>
     
 </title>
 
-       <link rel="stylesheet" type="text/css" media="screen" href="css/concise.min.css" />
-       <link rel="stylesheet" type="text/css" media="screen" href="css/masthead.css" />
+       <link rel="stylesheet" type="text/css" media="screen" href="./css/concise.min.css" />
+       <link rel="stylesheet" type="text/css" media="screen" href="./css/masthead.css" />
 
 </head>
 <body>

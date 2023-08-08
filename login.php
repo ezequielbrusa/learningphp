@@ -1,4 +1,4 @@
-<?php // Script 8.8 - Login.php. THis page let people log in into a site
+<?php // Script 8.8 - Login.php. THis page let people log in into a site + Script 8.13
 
 // Set the page  title and include the header file:
 define('TITLE', 'Login');
@@ -16,8 +16,16 @@ print '<h2>Login Form</h2>
 
      if ( (strtolower($_POST['email'] ) == 'me@xample.com' ) && ($_POST['password'] == 'testpass') ) { //correct!
 
-        print '<p class="text--success">You are logged in!<br>Now you can blah, blah, blah...</p>';
+       session_start();                 // Pag 262  Script 9.6.   
+$_SESSION['email'] = $_POST['email'];   // Pag 262  Script 9.6. 
+$_SESSION['loggedin'] = time();         // Pag 262  Script 9.6.
 
+       // print '<p class="text--success">You are logged in!<br>Now you can blah, blah, blah...</p>';
+// Page 238 "THe use of header function"-> Redirect the user to the welcome page:
+    ob_end_clean(); // Destroy the buffer!
+    header('Location: welcome.php');
+    exit();
+      
      } else { // Incorrect!
               print '<p class="test--error">The submitted email address and password do not match those on file!<br>Go back and try again.</p>';
             }

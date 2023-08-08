@@ -15,4 +15,6 @@ print date('g:i a l F j');
 </footer>
 
 </body>
-</html>
+</html><?php // Script 8.12: send the buffer to the browser and turn off buffering:
+ob_end_flush();
+?>
