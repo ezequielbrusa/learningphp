@@ -58,7 +58,7 @@ print '<p class="text--error">Please try again!</p>';
 // Createn the form:
     ?>
     
-    <form action="register.php" method="post" class="form--inline">
+    <form action="register2.php" method="post" class="form--inline">
 
 <p><label for="first_name">First Name:</label><input type="text" name="first_name" size="20"
  value="<?php if (isset($_POST['first_name'])) {

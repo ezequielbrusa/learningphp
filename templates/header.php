@@ -20,8 +20,8 @@ ob_start();?>
     
 </title>
 
-       <link rel="stylesheet" type="text/css" media="screen" href="./css/concise.min.css" />
-       <link rel="stylesheet" type="text/css" media="screen" href="./css/masthead.css" />
+       <link rel="stylesheet" type="text/css" media="screen" href="/css/concise.min.css" />
+       <link rel="stylesheet" type="text/css" media="screen" href="/css/masthead.css" />
 
 </head>
 <body>
